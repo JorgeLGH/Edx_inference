@@ -33,4 +33,16 @@ ds_theme_set()
 take_poll(25)#takes a random sample of an urn withg red and blue balls, it is with replacements
 ```
 
+The total of blue balls shall be represented as *p*, so the total of red balls is represented as 
+
+
+
+
 # Section 2
+
+
+
+
+
+
+
