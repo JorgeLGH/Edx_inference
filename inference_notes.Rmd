@@ -2,7 +2,13 @@
 title: "Inference Edx coruse"
 author: "Jorge Gómez"
 date: "6/23/2021"
-output: html_document
+output:
+  rmdformats::readthedown:
+    self_contained: true
+    thumbnails: true
+    lightbox: true
+    gallery: false
+    highlight: tango
 ---
 
-Must check if what I'm doing is correctly done in order to connect it to GitHub.
+Must check if what I'm doing is correctly done in order to connect it to GitHub..
