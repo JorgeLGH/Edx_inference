@@ -3,6 +3,11 @@ title: "Inference Edx coruse"
 author: "Jorge Gómez"
 date: "6/23/2021"
 output:
+  html_document:
+    toc: true
+    toc_float: 
+      collapsed: false
+      smooths_croll: false
   rmdformats::readthedown:
     self_contained: true
     thumbnails: true
@@ -10,5 +15,22 @@ output:
     gallery: false
     highlight: tango
 ---
+# Section 1
 
-Must check if what I'm doing is correctly done in order to connect it to GitHub..
+## Objectives
+
+1. Understand how to use a sampling model to perform a poll.
+2. Explain the terms population, parameter, and sample as they relate to statistical inference.
+3. Use a sample to estimate the population proportion from the sample average.
+4. Calculate the expected value and standard error of the sample average. 
+
+### Understand how to use a sampling model to perform a poll
+Loads the needed library and sets an example of a sample of 25 that have two possible states. In this case, the *urn* from which the sample is taken, doesn´t show itlsef so that we have to estimate the proportion of the balls
+```{r warning=FALSE, cache=FALSE, message=FALSE}
+library(tidyverse)
+library(dslabs)
+ds_theme_set()
+take_poll(25)#takes a random sample of an urn withg red and blue balls, it is with replacements
+```
+
+# Section 2
