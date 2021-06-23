@@ -1,0 +1,8 @@
+---
+title: "Inference Edx coruse"
+author: "Jorge Gómez"
+date: "6/23/2021"
+output: html_document
+---
+
+Must check if what I'm doing is correctly done in order to connect it to GitHub.
