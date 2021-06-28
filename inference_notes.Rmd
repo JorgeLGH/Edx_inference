@@ -30,7 +30,7 @@ output:
 3. **Sample**: observed data from a subset of the population.
 4. **Estimate**: summary of the data in a parameter, it's driven by the parameter.
 
-### Understand how to use a sampling model to perform a poll
+### Sampling Model Parameters and Estimates
 Loads the needed library and sets an example of a sample of 25 that have two possible states. In this case, the *urn* from which the sample is taken, doesn´t show itlsef so that we have to estimate the proportion of the balls
 ```{r warning=FALSE, cache=FALSE, message=FALSE}
 library(tidyverse)
@@ -40,11 +40,24 @@ take_poll(25)#takes a random sample of an urn withg red and blue balls, it is wi
 ```
 
 The total of blue balls shall be represented as *p*, so the total of red balls is represented as *1-p*. The spread of said balls would be then *p-(1-p)* or simplified as *2p-1*. The total of beads, or any total of any other type of subjects, is called **population**; while, in this case, the proportion of blue balls would be a **parameter**, and the balls that were taken from the urn would be known as **sample**.
-The task of statistical inference, in this particular case, would be to predict the parameter, *p*, using the observed data in the sample. The samples taken are informative, but are not a true representation of the whole, however, its information is certainly helpful. With inference, we want to generate an **estimate**, which is a summary of the data we have/observe.
+
+The task of statistical inference, in this particular case, would be to predict the parameter, *p*, using the observed data in the sample. The samples taken are informative, but are not a true representation of the whole, however, its information is certainly helpful. With inference, we want to generate an **estimate**, which is a summary of the data we have/observe. It is importanty to know that the samples are informative, but are prone to error since, at least in this case, they are random, meaning every time the function to take a sample from the urn, would give a different result and a different value of *p*.
+
+### The Sample Average
+When we have the parameter, *p*, it is easy to get the value of the spread, *2p-1*. To illustrate, in this imaginary example, every time the a blue balls get sampled it would have a value of 1, while getting a red balls would have a value of 0, so in order to get the proportion from a *N* number of samples, it would simply be illustrated like this.
+$$
+\bar{X}=\frac{X_1+X_2+X_3+...+X_n}{N}
+$$
+If we have multiple samples that are randomly taken, it would look like this.
+$$
+N\bar{X}=\frac{X_1+X_2+X_3+...+X_n}{N}
+$$
+Since *N* is not a variable, meaning that the value we already know, then this equation can be performed and the distribution of the avreage taken from all the samples.
 
 
 
-# Section 2
+
+
 
 
 
