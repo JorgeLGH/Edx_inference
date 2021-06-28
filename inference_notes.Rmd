@@ -24,6 +24,12 @@ output:
 3. Use a sample to estimate the population proportion from the sample average.
 4. Calculate the expected value and standard error of the sample average. 
 
+#### Key words
+1. **Population**: the collection of elements.
+2. **Parameter**: number that summarizes the data from the entire population.
+3. **Sample**: observed data from a subset of the population.
+4. **Estimate**: summary of the data in a parameter, it's driven by the parameter.
+
 ### Understand how to use a sampling model to perform a poll
 Loads the needed library and sets an example of a sample of 25 that have two possible states. In this case, the *urn* from which the sample is taken, doesn´t show itlsef so that we have to estimate the proportion of the balls
 ```{r warning=FALSE, cache=FALSE, message=FALSE}
@@ -33,10 +39,9 @@ ds_theme_set()
 take_poll(25)#takes a random sample of an urn withg red and blue balls, it is with replacements
 ```
 
-The total of blue balls shall be represented as *p*, so the total of red balls is represented as 
-$$
-1-p
-$$
+The total of blue balls shall be represented as *p*, so the total of red balls is represented as *1-p*. The spread of said balls would be then *p-(1-p)* or simplified as *2p-1*. The total of beads, or any total of any other type of subjects, is called **population**; while, in this case, the proportion of blue balls would be a **parameter**, and the balls that were taken from the urn would be known as **sample**.
+The task of statistical inference, in this particular case, would be to predict the parameter, *p*, using the observed data in the sample. The samples taken are informative, but are not a true representation of the whole, however, its information is certainly helpful. With inference, we want to generate an **estimate**, which is a summary of the data we have/observe.
+
 
 
 # Section 2
