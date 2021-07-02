@@ -17,7 +17,8 @@ output:
 ---
 **Note: the following notes are done following the Data Science: Inference and Modeling course from EdX. The scenario in which all exercises are implemented is an election poll in the U.S.A.**
 
-# Section 1
+# Section 1, Parameters and Estimates
+
 
 ## Objectives
 
@@ -91,6 +92,8 @@ $$
 
 #### Ex. 2
 Again, consider the random variable *S*, which is the total number of Democrats in your sample of 25 voters. The variable *p* describes the proportion of Democrats in the sample, whereas *1-p* describes the proportion of Republicans. What is the standard error of *S*?
+
+
 **Answer:**
 $$
 SE(S)=\sqrt{25p(1-p)}
@@ -99,6 +102,8 @@ $$
 
 #### Ex. 3
 Consider the random variable *S/N*, which is equivalent to the sample average that we have been denoting as *X*. The variable *N* represents the sample size and  is the proportion of Democrats in the population. What is the expected value of *X*?
+
+
 **Answer:**
 $$
 E(\bar{X})=p
@@ -107,6 +112,8 @@ $$
 
 #### Ex. 4
 What is the standard error of the sample average, *X*? The variable *N* represents the sample size and  is the proportion of Democrats in the population.
+
+
 **Answer:**
 $$
 SE(\bar{X})=\sqrt{p(1-p)/N}
@@ -158,6 +165,8 @@ for (i in sample_sizes) {
 
 #### Ex. 7
 Our estimate for the difference in proportions of Democrats and Republicans is *d=X-(1-X)*. Which derivation correctly uses the rules we learned about sums of random variables and scaled random variables to derive the expected value of *d*?
+
+
 **Answer:**
 $$
 E[\bar{X}-(1-\bar{X})]=E[2\bar{X}-1]=2E[\bar{X}]-1=2p-1=p-(1-p)
@@ -166,6 +175,8 @@ $$
 
 #### Ex. 8
 Our estimate for the difference in proportions of Democrats and Republicans is *d=X-(1-X)*.Which derivation correctly uses the rules we learned about sums of random variables and scaled random variables to derive the standard error of *d*?
+
+
 **Answer:**
 $$
 SE[\bar{X}-(1-\bar{X})]=SE[2\bar{X}-1]=2SE[\bar{X}]=2\sqrt{p(1-p)/N}
@@ -191,7 +202,27 @@ p <- 0.45
 
 #### Ex. 10
 1. So far we have said that the difference between the proportion of Democratic voters and Republican voters is about 10% and that the standard error of this spread is about 0.2 when *N=25*. Select the statement that explains why this sample size is sufficient or not.
-*Answer:*This sample size is too small because the standard error is larger than the spread.
+
+**Answer:**This sample size is too small because the standard error is larger than the spread.
+
+# Section 2, The Central Limit Theorem in Practice
+
+## Objectives
+1. Use the Central Limit Theorem to calculate the probability that a sample estimate *X* is close to the population proportion *p*.
+2. Run a Monte Carlo simulation to corroborate theoretical results built using probability theory.
+3. Estimate the spread based on estimates of *X* and *SE(X)*.
+4. Understand why bias can mean that ñarger samples sizes aren't necessarily better.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
