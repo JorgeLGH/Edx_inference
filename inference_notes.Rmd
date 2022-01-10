@@ -213,7 +213,9 @@ p <- 0.45
 3. Estimate the spread based on estimates of *X* and *SE(X)*.
 4. Understand why bias can mean that ñarger samples sizes aren't necessarily better.
 
+### The Central Limit Theorem in Practice
 
+This theorem tells us taht the distribution for the sum of draws is approximately normal. Also, it is important to remeber that the result of dividing a normally distributed  random variable by a non-random constant, te resulting variable will also be normally distributed. 
 
 
 
